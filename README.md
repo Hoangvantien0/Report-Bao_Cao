@@ -1,32 +1,19 @@
 # Image Classification
 
-This is an image classification app built using **Django 3**, **Django REST Framework 3**, **Next.js 12**, and **Material UI 5**. The app uses **Inception-ResNet-v2** to classify images selected by the user.
-
-
-![plot](https://github.com/BobsProgrammingAcademy/Image-Classification/blob/main/frontend/public/images/image_classification.png?raw=true)
-
-
-## Table of Contents 
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Run the application](#run-the-application)
-- [Copyright and License](#copyright-and-license)
-
-
+Đây là một ứng dụng phân loại hình ảnh được xây dựng bằng Django ,Next.js. Ứng dụng sử dụng Inception-ResNet-v2 để phân loại hình ảnh do người dùng chọn.
 ## Prerequisites
+Những phần mêm và ngôn ngữ cần dùng
 
-Install the following prerequisites:
-
-1. [Python](https://www.python.org/downloads/)
-2. [Node.js](https://nodejs.org/en/)
-3. [Visual Studio Code](https://code.visualstudio.com/download)
+1. [Python]
+2. [Node.js]
+3. [Visual Studio Code]
 
 
-## Installation
+## Cài đặt
 
-### 1. Create a virtual environment
+### 1. Tạo môi trường ảo
 
-From the **root** directory run:
+Từ root chạy:
 
 ```bash
 cd backend
@@ -37,31 +24,23 @@ python -m venv venv
 
 ### 2. Activate the virtual environment
 
-From the **backend** directory run:
-
-On macOS:
-
-```bash
-source venv/bin/activate
-```
-
-On Windows:
+từ thư mục **backend** chạy:
 
 ```bash
 venv\scripts\activate
 ```
 
-### 3. Install required backend dependencies
+### 3. cài đặt thư các thư viện cần thiết
 
-From the **backend** directory run:
+từ thư mục **backend** chạy:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. Run migrations
+### 4. Chạy migrations
 
-From the **backend** directory run:
+từ thư mục **backend** chạy:
 
 ```bash
 python manage.py makemigrations
@@ -71,9 +50,9 @@ python manage.py makemigrations
 python manage.py migrate
 ```
 
-### 5. Install required frontend dependencies
+### 5. Cài đặt thư viện trong thư mục frontend
 
-From the **root** directory run:
+từ root chạy:
 
 ```bash
 cd frontend
@@ -82,31 +61,21 @@ cd frontend
 npm install
 ```
 
-## Run the application
+## Chạy dự án 
 
-To run the application, you need to have both the backend and the frontend up and running.
+### 1. chạy backend
 
-### 1. Run backend
-
-From the **backend** directory run:
+từ root chạy:
 
 ```bash
 python manage.py runserver
 ```
 
-### 2. Run frontend
+### 2. chạy frontend
 
-From the **frontend** directory run:
+từ root chạy:
 
 ```bash
 npm run dev
 ```
 
-### 3. View the application
-
-Go to http://localhost:3000/ to view the application.
-
-
-## Copyright and License
-
-Copyright © 2022 Bob's Programming Academy. Code released under the MIT license.
